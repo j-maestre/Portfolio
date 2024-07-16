@@ -18,4 +18,22 @@ window.addEventListener('scroll', function() {
     description.style.opacity = newOpacity;
 
     arrow.style.opacity = newOpacity;
+
+    if(newOpacity <= 0.0){
+
+   //     window.setTimeout(() =>{
+         //   if(newOpacity <= 0.0){
+                document.getElementById("about").style.display = 'none';
+       //     }
+     //   }, 1000.0);
+    }else{
+        document.getElementById("about").style.display = 'block';
+    }
 });
+
+
+window.addEventListener("load", (event) =>{
+    document.getElementById("andromeda_img").addEventListener("click", function(){
+        window.open("https://www.youtube.com/watch?v=myVIggxY4uM&ab_channel=XemaMaestreQuiles", "_blank");
+    });
+})
