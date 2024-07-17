@@ -33,7 +33,14 @@ window.addEventListener('scroll', function() {
 
 
 window.addEventListener("load", (event) =>{
+    document.getElementById("shelley_img").addEventListener("click", function(){
+        console.log("click")
+        window.location = "./src/shelley/index.html"
+    });
+    
     document.getElementById("andromeda_img").addEventListener("click", function(){
         window.open("https://www.youtube.com/watch?v=myVIggxY4uM&ab_channel=XemaMaestreQuiles", "_blank");
     });
+
+
 })
