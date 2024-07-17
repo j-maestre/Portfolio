@@ -60,14 +60,21 @@
     box-shadow: 0px 0px 41px 5px var(--secondary-color);*/
 }
 
+.project-desc{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
 
-.project img, .project p{
+
+ .project p{
     margin-bottom: 10px;
 }
 
-.project-title{
-    margin-top: 6vw ;
+.project img{
+    border-radius: 5px;
 }
+
+
 .project p{
     margin-bottom: 6vw ;
 
