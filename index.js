@@ -3,6 +3,8 @@ window.addEventListener('scroll', function() {
     let name = document.getElementById('about-name');
     let description = document.getElementById('about-description');
     let arrow = document.getElementById('arrow-down');
+    let logos = document.querySelectorAll('.logo');
+    let email = document.getElementById('about-email');
 
     const projectsSection = document.getElementById('projects');
     const projectsTop = projectsSection.offsetTop;
@@ -16,8 +18,13 @@ window.addEventListener('scroll', function() {
     title.style.opacity = newOpacity;
     name.style.opacity = newOpacity;
     description.style.opacity = newOpacity;
+    email.style.opacity = newOpacity;
 
     arrow.style.opacity = newOpacity;
+    logos.forEach(logo =>{
+        logo.style.opacity = newOpacity;
+    });
+
 
     if(newOpacity <= 0.0){
 
