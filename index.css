@@ -66,6 +66,8 @@
 }
 
 
+
+
  .project p{
     margin-bottom: 10px;
 }
@@ -83,6 +85,9 @@
 .project-img{
     border-radius: 25px;
     transition: all 0.3s;
+    width: 45%;
+    height: auto;
+
 }
 
 .project-img:hover{

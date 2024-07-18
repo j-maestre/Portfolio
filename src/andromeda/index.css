@@ -81,7 +81,7 @@ body::after {
 
 .steam_text:hover{
     cursor: pointer;
-    transform: scale(1.1);
+
 }
 
 .steam-icon{
@@ -95,8 +95,13 @@ body::after {
     height: auto;
     background-color: var(--secondary-color);
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 .margin{
     padding: 10px
+}
+
+a{
+    color: var(--secondary-color);
 }

@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function() {
+function CheckScroll(){
     let title = document.getElementById('about-title');
     let name = document.getElementById('about-name');
     let description = document.getElementById('about-description');
@@ -36,10 +36,13 @@ window.addEventListener('scroll', function() {
     }else{
         document.getElementById("about").style.display = 'block';
     }
-});
+}
+
+window.addEventListener('scroll', CheckScroll);
 
 
 window.addEventListener("load", (event) =>{
+    CheckScroll();
     document.getElementById("shelley_img").addEventListener("click", function(){
         console.log("click")
         window.location = "./src/shelley/index.html"
@@ -51,6 +54,14 @@ window.addEventListener("load", (event) =>{
    
     document.getElementById("music_runner_img").addEventListener("click", function(){
         window.location = "./src/runner/index.html";
+    });
+    
+    document.getElementById("balance_board_img").addEventListener("click", function(){
+        window.location = "./src/balance_board/index.html";
+    });
+   
+    document.getElementById("movie_going_img").addEventListener("click", function(){
+        window.location = "./src/movie_going/index.html";
     });
 
 
