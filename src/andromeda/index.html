@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andromeda Engine</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../global.css">
 </head>
 <body>
     <nav id="nav_bar" class="nav-bar">
 
-        <ul class="profile-nav">
-            <li><img src="" alt="profile pic" /></li>
-            <li>Xema</li>
-        </ul>
+        <div class="profile-nav">
+            <img src="" alt="profile pic" />
+            <p><a href="../../index.html">Xema</a></p>
+        </div>
+
         <ul class="nav-bar-list">   
-            <li>About me</li>
+            <li><a href="../../index.html">About me</a></li>
             <li>Projects</li>
             <li>Contact</li>
         </ul>
@@ -25,6 +27,41 @@
         </div>
     </nav>
 
+    <section class="project-container">
+        <div class="project-info">
+            <h1>Andromeda Engine</h1>
+            <img src="../../assets/ue5.png" class="ue_img"/>
+            <p>Self made game engine programmed in C++ with mi partner <a href="https://github.com/ochandoca">Hector Ochando</a></p>
+            <p>This Game Engine has:</p>
+            <ul>
+                <li>Rendering</li>
+                <ul>
+                    <li>Forward Rendering</li>
+                    <li>Deferred Rendering</li>
+                    <li>Deferred Rendering with Physically Based Rendering (PBR)</li>
+                </ul>
+                <li>Lights</li>
+                <ul>
+                    <li>Ambient Light</li>
+                    <li>Directional Light</li>
+                    <li>Point Light</li>
+                    <li>Spot Light</li>
+                </ul>
+                <li>Shadow Mapping with all lights</li>
+                <li>Nvidia Physxs integrated</li>
+                <li>Sound integrated with OpenAL</li>
+                <li>Multithreading</li>
+            </ul>
+            <p class="steam_text" id="steam_url">Source code <i class="fa-brands fa-github steam-icon"></i></p>
+        </div>
+        <!--<img src="../../assets/shelly.png" />-->
+        <iframe src="https://www.youtube.com/embed/myVIggxY4uM" title="Andromeda Engine Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </section>
+
+    <div class="margin"></div>
+
+    
     
 
 

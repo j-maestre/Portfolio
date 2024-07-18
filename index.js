@@ -44,9 +44,13 @@ window.addEventListener("load", (event) =>{
         console.log("click")
         window.location = "./src/shelley/index.html"
     });
-    
+    //https://www.youtube.com/watch?v=myVIggxY4uM&ab_channel=XemaMaestreQuiles
     document.getElementById("andromeda_img").addEventListener("click", function(){
-        window.open("https://www.youtube.com/watch?v=myVIggxY4uM&ab_channel=XemaMaestreQuiles", "_blank");
+        window.location = "./src/andromeda/index.html";
+    });
+   
+    document.getElementById("music_runner_img").addEventListener("click", function(){
+        window.location = "./src/runner/index.html";
     });
 
 
