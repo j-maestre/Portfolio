@@ -21,7 +21,7 @@
 }
 
 .about-container p, .about-container h1{
-    transition: opacity 0.3s ease;
+    transition: opacity 0.0s ease;
     opacity: 1;
     color: var(--secondary-color);
     text-wrap: nowrap;
@@ -154,10 +154,6 @@
     transform: scale(1.2);
     color: var(--terciary-color) !important;
 }
-
-
-
-
 
 /* Animation */
 
