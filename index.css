@@ -229,6 +229,11 @@
         border-radius: 10px;
         overflow: hidden;
         margin-top: 0;
+        box-shadow: 10px 10px 0px 0px rgb(19 19 19);
+    }
+
+    .projects{
+        margin-top: 0%;
     }
 
     .project-desc{
@@ -253,5 +258,7 @@
         width: 102%;
         border-radius: 0px !important;
     }
+
+    
 }
    

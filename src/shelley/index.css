@@ -95,3 +95,35 @@ body::after {
     background-color: var(--secondary-color);
     border-radius: 10px;
 }
+
+
+
+
+@media (max-width: 1024px){
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-info img{
+        width: 15vw;
+    }
+
+
+    .project-container video {
+        width: 80vw;
+    }
+
+    h1{
+        font-size: 9vw !important;
+        text-wrap: nowrap;
+    }
+    
+    p{
+        font-size: 4vw !important;
+    }
+}

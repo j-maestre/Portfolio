@@ -100,3 +100,34 @@ body::after {
 .margin{
     padding: 10px
 }
+
+@media (max-width: 1024px){
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-info img{
+        width: 15vw;
+    }
+
+
+    .project-container iframe {
+        width: 80vw;
+        height: 45vw;
+        margin-bottom: 15vw;
+    }
+
+    h1{
+        font-size: 9vw !important;
+        text-wrap: nowrap;
+    }
+    
+    p{
+        font-size: 4vw !important;
+    }
+}
