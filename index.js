@@ -28,13 +28,11 @@ function CheckScroll(){
 
     if(newOpacity <= 0.0){
 
-   //     window.setTimeout(() =>{
-         //   if(newOpacity <= 0.0){
-                document.getElementById("about").style.display = 'none';
-       //     }
-     //   }, 1000.0);
+        document.getElementById("about").style.display = 'none';
+        document.getElementById("arrow_container").classList.remove('pulse');
     }else{
         document.getElementById("about").style.display = 'block';
+        document.getElementById("arrow_container").classList.add('pulse');
     }
 }
 
