@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT', cursive !important;
     margin: 0;
     padding: 0;
     top: 0;
@@ -174,7 +174,8 @@ li{
     }
 
     .about-container p{
-        font-size: 3vw
+        font-size: 5vw;
+        text-wrap: pretty;
     }
     .about-container h1{
         font-size: 9vw;

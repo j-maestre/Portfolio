@@ -237,7 +237,8 @@
     }
 
     .project-desc{
-        font-size: 3.5vw;
+        font-size: 5.0vw;
+        text-wrap: pretty;
     }
 
     .project-title img{
