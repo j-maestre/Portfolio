@@ -42,7 +42,11 @@ window.addEventListener('scroll', CheckScroll);
 
 
 window.addEventListener("load", (event) =>{
+
     CheckScroll();
+    
+
+    
     document.getElementById("shelley_img").addEventListener("click", function(){
         console.log("click")
         window.location = "./src/shelley/index.html"
@@ -63,6 +67,10 @@ window.addEventListener("load", (event) =>{
     document.getElementById("movie_going_img").addEventListener("click", function(){
         window.location = "./src/movie_going/index.html";
     });
+
+
+
+    
 
 
 })
