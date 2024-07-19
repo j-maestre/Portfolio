@@ -24,8 +24,9 @@ function CheckScroll(){
     logos.forEach(logo =>{
         logo.style.opacity = newOpacity;
     });
+    
 
-
+    console.log("New opacity: " + newOpacity);
     if(newOpacity <= 0.0){
 
         document.getElementById("about").style.display = 'none';
@@ -38,10 +39,16 @@ function CheckScroll(){
 
 window.addEventListener('scroll', CheckScroll);
 
+window.addEventListener('scroll', function(){
+    console.log("scroll");
+});
+
 
 window.addEventListener("load", (event) =>{
 
     CheckScroll();
+
+
     
 
     
@@ -49,7 +56,7 @@ window.addEventListener("load", (event) =>{
         console.log("click")
         window.location = "./src/shelley/index.html"
     });
-    //https://www.youtube.com/watch?v=myVIggxY4uM&ab_channel=XemaMaestreQuiles
+
     document.getElementById("andromeda_img").addEventListener("click", function(){
         window.location = "./src/andromeda/index.html";
     });
@@ -72,3 +79,5 @@ window.addEventListener("load", (event) =>{
 
 
 })
+
+
