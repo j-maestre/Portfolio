@@ -164,6 +164,13 @@ li{
 
     .arrow-container{
         /*display: none;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        position: relative;
     }
 
     .about-container p{

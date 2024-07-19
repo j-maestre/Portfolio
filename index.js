@@ -12,6 +12,8 @@ function CheckScroll(){
     // Calcula cuánto has scrolleado
     const scrollY = window.scrollY;
 
+    console.log("Scroll Y: " + scrollY);
+
     // Determina el nuevo valor de opacidad
     const newOpacity = 1 - Math.min((scrollY) / ((projectsTop * 1.3) - window.innerHeight), 1);
 
@@ -25,23 +27,42 @@ function CheckScroll(){
         logo.style.opacity = newOpacity;
     });
     
+    console.log(window.innerWidth);
+    //console.log("New opacity: " + newOpacity);
 
-    console.log("New opacity: " + newOpacity);
+    if(window.innerWidth <= 1024){
+        document.getElementById("arrow_container").classList.remove('pulse');
+        document.getElementById("mobile_arrow_container").classList.add('pulse');
+    }else{
+        document.getElementById("arrow_container").classList.add('pulse');
+        document.getElementById("mobile_arrow_container").classList.remove('pulse');
+    }
+
+
+
     if(newOpacity <= 0.0){
 
         document.getElementById("about").style.display = 'none';
-        document.getElementById("arrow_container").classList.remove('pulse');
+        
+        if(window.innerWidth > 1024){
+            document.getElementById("arrow_container").classList.remove('pulse');
+        }
+
     }else{
         document.getElementById("about").style.display = 'block';
-        document.getElementById("arrow_container").classList.add('pulse');
+        
+        if(window.innerWidth > 1024){
+            document.getElementById("arrow_container").classList.add('pulse');
+        }
     }
 }
 
+
 window.addEventListener('scroll', CheckScroll);
 
-window.addEventListener('scroll', function(){
-    console.log("scroll");
-});
+
+
+document.body.addEventListener('scroll',CheckScroll)
 
 
 window.addEventListener("load", (event) =>{
