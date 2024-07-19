@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    font-family: 'Brush Script MT', cursive !important;
+    font-family: cursive !important;
     margin: 0;
     padding: 0;
     top: 0;
@@ -194,7 +194,7 @@ li{
     }
     
     body {
-        font-family: 'Brush Script MT', cursive;
+        font-family: cursive !important;
         
         top: 0;
         left: 0;
@@ -203,6 +203,7 @@ li{
     }
     
     html, body {
+        font-family: cursive !important;
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
