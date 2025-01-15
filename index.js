@@ -94,6 +94,10 @@ window.addEventListener("load", (event) =>{
         window.location = "./src/movie_going/index.html";
     });
 
+    document.getElementById("cloth_img").addEventListener("click", function(){
+        window.location = "./src/cloth/index.html";
+    });
+
 
 
     
