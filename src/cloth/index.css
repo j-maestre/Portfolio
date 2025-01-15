@@ -12,7 +12,8 @@ body {
     height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
     width: 100vw; /* Asegura que el body ocupe todo el ancho de la ventana */
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body::before {
@@ -101,12 +102,17 @@ body::after {
 
 @media (max-width: 1024px){
 
+    body::before, body::after {
+        position: fixed;
+    }
+
     .project-container{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+        padding-bottom: 15vw;
     }
 
     .project-info img{
