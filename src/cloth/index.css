@@ -105,6 +105,10 @@ body::after {
     body::before, body::after {
         position: fixed;
     }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto !important;
+    }
 
     .project-container{
         display: flex;
