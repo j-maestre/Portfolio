@@ -164,15 +164,6 @@ li{
     stroke-width: 2; /* Adjust stroke width to make the wave line thinner */
 }
 
-@media only screen and (max-width: 1024px) {
-    body {
-      transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      overflow: hidden;
-    }
-  }
-
 
 @media (max-width: 1024px){
     .nav-bar{
@@ -231,4 +222,13 @@ li{
     }
 }
 
+
+@media only screen and (max-width: 1024px) {
+    body {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      overflow: hidden;
+    }
+  }
 
