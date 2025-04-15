@@ -73,28 +73,28 @@ window.addEventListener("load", (event) =>{
     
 
     
-    document.getElementById("shelley_img").addEventListener("click", function(){
+    document.getElementById("shelley").addEventListener("click", function(){
         console.log("click")
         window.location = "./src/shelley/index.html"
     });
 
-    document.getElementById("andromeda_img").addEventListener("click", function(){
+    document.getElementById("andromeda").addEventListener("click", function(){
         window.location = "./src/andromeda/index.html";
     });
    
-    document.getElementById("music_runner_img").addEventListener("click", function(){
+    document.getElementById("music_runner").addEventListener("click", function(){
         window.location = "./src/runner/index.html";
     });
     
-    document.getElementById("balance_board_img").addEventListener("click", function(){
+    document.getElementById("balance_board").addEventListener("click", function(){
         window.location = "./src/balance_board/index.html";
     });
    
-    document.getElementById("movie_going_img").addEventListener("click", function(){
+    document.getElementById("movie_going").addEventListener("click", function(){
         window.location = "./src/movie_going/index.html";
     });
 
-    document.getElementById("cloth_img").addEventListener("click", function(){
+    document.getElementById("cloth").addEventListener("click", function(){
         window.location = "./src/cloth/index.html";
     });
 
