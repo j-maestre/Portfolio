@@ -12,12 +12,12 @@ body {
     height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
     width: 100vw; /* Asegura que el body ocupe todo el ancho de la ventana */
     position: relative;
-    overflow: hidden;
+    
 }
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +33,7 @@ body::before {
 
 body::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -42,19 +42,57 @@ body::after {
     z-index: -1; /* Coloca la superposición por encima del fondo pero detrás del contenido */
 }
 
-.project-container{
-    margin-top:  13vw;
-    
+.specifications{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-
     margin-left: 6vw;
     margin-right: 6vw;
-
     color: var(--secondary-color);
+}
+
+.project-container{
+
+    position: relative;
+    margin-top:  13vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    color: var(--secondary-color);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+    
+    /*
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    */
+
+}
+
+
+.bottom-left, .bottom-right{
+    margin-top: 2vw;
+}
+
+.separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2); /* o lo que prefieras */
+    top: 34.5%; /* Colócala aproximadamente en la mitad del grid */
+
+    margin-right: 6vw;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 2px;
 }
 
 .project-container video{
@@ -62,6 +100,10 @@ body::after {
     width: 50vw;
     height: auto;
     border-radius: 5px;
+}
+
+.project_role{
+    display: inline-block;
 }
 
 .project-info{
@@ -96,7 +138,30 @@ body::after {
     border-radius: 10px;
 }
 
+.bold{
+    font-weight: bold;
+}
 
+#steam_link:hover, #chaos_system:hover{
+    cursor: pointer;
+}
+
+.top-left{
+
+    margin-right: 1vw;
+}
+
+h3{
+    font-size: 40px !important;
+    margin-top: 0 !important;
+    margin-block-end: 0em;
+}
+
+h4{
+    font-size: 30px !important;
+    margin-top: 0 !important;
+    margin-block-end: 0em;
+}
 
 
 @media (max-width: 1024px){
@@ -118,13 +183,29 @@ body::after {
         width: 80vw;
     }
 
+    .bottom-left{
+        width: 100%;
+    }
+
     h1{
         font-size: 9vw !important;
         text-wrap: nowrap;
     }
     
     p{
-        font-size: 5vw !important;
+        font-size: 4vw !important;
         text-wrap: pretty;
+    }
+
+    h3{
+        font-size: 25px !important;
+    }
+    
+    h4{
+        font-size: 20px !important;
+    }
+
+    .separator{
+        display: none;
     }
 }
