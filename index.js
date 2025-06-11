@@ -77,6 +77,11 @@ window.addEventListener("load", (event) =>{
         console.log("click")
         window.location = "./src/shelley/index.html"
     });
+   
+    document.getElementById("playstation").addEventListener("click", function(){
+        console.log("click")
+        window.location = "./src/playstation/index.html"
+    });
 
     document.getElementById("andromeda").addEventListener("click", function(){
         window.location = "./src/andromeda/index.html";

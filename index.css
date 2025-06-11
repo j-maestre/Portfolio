@@ -6,7 +6,7 @@
 .about-container{
 
     position: fixed; /* Mantiene el div en una posición fija */
-    top: 50%; /* Mueve el div al centro verticalmente */
+    top: 55%; /* Mueve el div al centro verticalmente */
     left: 50%; /* Mueve el div al centro horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición para centrarlo */
     display: flex; /* Habilita flexbox */
@@ -127,6 +127,7 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 99;
 }
 .arrow-svg{
     height: 3em;
@@ -160,6 +161,10 @@
     cursor: pointer;
     transform: scale(1.2);
     color: var(--terciary-color) !important;
+}
+
+#about-title{
+    margin-bottom: 0 !important;
 }
 
 /* Animation */

@@ -1,0 +1,234 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    width: 100vw; /* Asegura que el body ocupe todo el ancho de la ventana */
+    position: relative;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/hexagon.webp");
+    background-repeat: no-repeat;
+    background-size: cover; /* Asegura que la imagen cubra toda el área del body */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    filter: blur(8px); /* Ajusta el valor de px según sea necesario */
+    z-index: -2; /* Coloca la imagen de fondo detrás del contenido */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente para oscurecer */
+    z-index: -1; /* Coloca la superposición por encima del fondo pero detrás del contenido */
+}
+
+.specifications{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    color: var(--secondary-color);
+}
+
+.specifications_info a{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.project-container{
+
+    position: relative;
+    margin-top:  13vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    color: var(--secondary-color);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+    
+    /*
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    */
+
+}
+
+iframe{
+    /*max-width: 800px;*/
+    width: 50vw;
+    height: 27vw;
+    /*min-height: 400px;
+    height: auto;*/
+    border-radius: 5px;
+    margin-top: 6vw;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+}
+
+.project-container p, .project-container li{
+    font-size: 15px;
+}
+
+
+.bottom-left, .bottom-right{
+    margin-top: 2vw;
+}
+
+.separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2); /* o lo que prefieras */
+    top: 34.5%; /* Colócala aproximadamente en la mitad del grid */
+
+    margin-right: 6vw;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+.project-container video{
+    max-width: 800px;
+    width: 50vw;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project_role{
+    display: inline-block;
+}
+
+.project-info{
+    margin-right: 1vw;
+}
+
+.steam_text{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.3s;
+}
+
+.steam_text:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.steam-icon{
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.ue_img{
+    width: 75px;
+    height: auto;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#steam_link:hover, #chaos_system:hover{
+    cursor: pointer;
+}
+
+.top-left{
+
+    margin-right: 1vw;
+}
+
+h3{
+    font-size: 40px !important;
+    margin-top: 0 !important;
+    margin-block-end: 0em;
+}
+
+h4{
+    font-size: 30px !important;
+    margin-top: 0 !important;
+    margin-block-end: 0em;
+}
+
+
+@media (max-width: 1024px){
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-info img{
+        width: 15vw;
+    }
+
+
+    .project-container video {
+        width: 80vw;
+    }
+
+    .bottom-left{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 9vw !important;
+        text-wrap: nowrap;
+    }
+    
+    p{
+        font-size: 4vw !important;
+        text-wrap: pretty;
+    }
+
+    h3{
+        font-size: 25px !important;
+    }
+    
+    h4{
+        font-size: 20px !important;
+    }
+
+    .separator{
+        display: none;
+    }
+}
