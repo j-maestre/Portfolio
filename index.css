@@ -14,7 +14,10 @@
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
     z-index: 1;
-    padding: 20px; /* Añade un poco de padding */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     
 }
