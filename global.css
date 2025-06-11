@@ -165,7 +165,7 @@ li{
 }
 
 
-@media (max-width: 1300px){
+@media (min-width: 1024px) and (max-width: 1300px){
     p{
         font-size: 15px;
     }

@@ -6,7 +6,7 @@
 .about-container{
 
     position: fixed; /* Mantiene el div en una posición fija */
-    top: 55%; /* Mueve el div al centro verticalmente */
+    top: 50%; /* Mueve el div al centro verticalmente */
     left: 50%; /* Mueve el div al centro horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta la posición para centrarlo */
     display: flex; /* Habilita flexbox */
@@ -163,8 +163,15 @@
     color: var(--terciary-color) !important;
 }
 
-#about-title{
-    margin-bottom: 0 !important;
+@media (min-width: 1024px) and (max-width: 1300px){
+
+    .about-container{
+        top: 50%;
+    }
+
+    #about-title{
+        margin-bottom: 0 !important;
+    }
 }
 
 /* Animation */
