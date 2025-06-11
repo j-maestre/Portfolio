@@ -130,7 +130,7 @@
     z-index: 99;
 }
 .arrow-svg{
-    height: 15vw;
+    height: 3em;
     color: var(--secondary-color);
 }
 
