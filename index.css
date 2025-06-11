@@ -219,7 +219,7 @@
         justify-content: center;
         align-items: center;
     
-        padding-top: 80px;  /* Adjusted to ensure it doesn't overlap with navbar */
+        /*padding-top: 80px;*/  /* Adjusted to ensure it doesn't overlap with navbar */
     }
     
     .about-container {
