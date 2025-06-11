@@ -166,7 +166,7 @@
 @media (min-width: 1024px) and (max-width: 1300px){
 
     .about-container{
-        top: 50%;
+        top: 55%;
     }
 
     #about-title{
@@ -219,7 +219,7 @@
         justify-content: center;
         align-items: center;
     
-        /*padding-top: 80px; */ /* Adjusted to ensure it doesn't overlap with navbar */
+        padding-top: 80px;  /* Adjusted to ensure it doesn't overlap with navbar */
     }
     
     .about-container {
