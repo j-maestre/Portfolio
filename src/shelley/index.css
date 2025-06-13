@@ -63,8 +63,8 @@ body::after {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0px;
+    grid-template-rows: repeat(3, minmax(0, auto));
+    gap: 10px;
     
     /*
     display: flex;
@@ -76,6 +76,10 @@ body::after {
 
 }
 
+.div5 {
+    grid-column: span 2 / span 2;
+    /*margin-top: -15vw;*/
+}
 
 .bottom-left, .bottom-right{
     margin-top: 2vw;
@@ -87,7 +91,7 @@ body::after {
     right: 0;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.2); /* o lo que prefieras */
-    top: 34.5%; /* Colócala aproximadamente en la mitad del grid */
+    top: 51.5%; /* Colócala aproximadamente en la mitad del grid */
 
     margin-right: 6vw;
     z-index: 1;
