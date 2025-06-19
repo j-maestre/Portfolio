@@ -9,31 +9,29 @@ body, html {
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    width: 100vw; /* Asegura que el body ocupe todo el ancho de la ventana */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
+    width: 100%; /* Asegura que el body ocupe todo el ancho de la ventana */
     position: relative;
-    
 }
 
 body::before {
     content: "";
-    position: fixed;
+    position: fixed; /* Cambia a fixed para que la imagen de fondo no se mueva al hacer scroll */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/shelly.png");
-    background-repeat: no-repeat;
-    background-size: cover; /* Asegura que la imagen cubra toda el área del body */
+    background-image: url("../../assets/hexagon.webp");
+    background-repeat: repeat;
+    background-size: auto; /* Puedes ajustar según sea necesario */
     background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
-    filter: blur(8px); /* Ajusta el valor de px según sea necesario */
+    filter: blur(8px);
     z-index: -2; /* Coloca la imagen de fondo detrás del contenido */
 }
 
 body::after {
     content: "";
-    position: fixed;
+    position: fixed; /* Cambia a fixed para que la capa oscura no se mueva al hacer scroll */
     top: 0;
     left: 0;
     width: 100%;
@@ -53,6 +51,11 @@ body::after {
     color: var(--secondary-color);
 }
 
+.specifications_info a{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .project-container{
 
     position: relative;
@@ -63,8 +66,8 @@ body::after {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, minmax(0, auto));
-    gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
     
     /*
     display: flex;
@@ -76,10 +79,24 @@ body::after {
 
 }
 
+iframe{
+    /*max-width: 800px;*/
+    width: 50vw;
+    height: 27vw;
+    /*min-height: 400px;
+    height: auto;*/
+    border-radius: 5px;
+    margin-top: 6vw;
+}
+
 .div5 {
     grid-column: span 2 / span 2;
-    /*margin-top: -15vw;*/
 }
+
+.project-container p, .project-container li{
+    font-size: 15px;
+}
+
 
 .bottom-left, .bottom-right{
     margin-top: 2vw;
@@ -91,7 +108,7 @@ body::after {
     right: 0;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.2); /* o lo que prefieras */
-    top: 51.5%; /* Colócala aproximadamente en la mitad del grid */
+    top: 34.5%; /* Colócala aproximadamente en la mitad del grid */
 
     margin-right: 6vw;
     z-index: 1;

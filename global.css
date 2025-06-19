@@ -165,6 +165,15 @@ li{
 }
 
 
+
+@media (min-width: 1024px) and (max-width: 1300px){
+   
+    #about-title{
+        margin-top: 0 !important;
+    }
+}
+    
+
 @media (max-width: 1024px){
     .nav-bar{
         display: none;
