@@ -97,12 +97,17 @@
     cursor: pointer;
 }
 
+
 .project-img:hover{
     cursor: pointer;
     transform: scale(1.05);
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+#nova_img:hover{
+    cursor: not-allowed;
 }
 
 .top-gradient{
