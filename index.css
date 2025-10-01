@@ -64,6 +64,35 @@
     box-shadow: 0px 0px 41px 5px var(--secondary-color);*/
 }
 
+
+
+.logo_cv{
+    width: 30px !important;
+}
+
+.cv-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cv-mobile{
+    display: none;
+}
+
+.cv-mobile p{
+    margin-left: 10px;
+}
+
+.cv-mobile-text{
+    display: inline-block;
+    text-decoration: none;
+}
+
 .project-desc{
     margin-left: 2vw;
     margin-right: 2vw;
@@ -220,6 +249,10 @@
 
   
 @media (max-width: 1024px){
+
+    .cv-mobile{
+        display: block;
+    }
 
     .about {
         height: 75vh;
